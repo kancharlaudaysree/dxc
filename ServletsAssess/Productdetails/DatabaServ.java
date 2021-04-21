@@ -16,7 +16,7 @@ public class DatabaServ extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public insertinfo() {
+    public DatabaServ() {
         super();
         // TODO Auto-generated constructor stub
     }
