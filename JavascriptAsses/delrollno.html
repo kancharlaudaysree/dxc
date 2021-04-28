@@ -9,9 +9,10 @@ var student =  {
   name : "David Rayy", 
   sclass : "VI", 
   rollno : 12  };
-console.log(student);
-delete student.rollno;
-console.log(student);
+    document.write("Before Removing roll number property: " + student.name + ", " + student.studclass + ", " + student.rollno);
+    delete student.rollno;
+    document.write("<br>");
+    document.write("After Removing roll number property: " + student.name + ", " + student.studclass + ", " + student.rollno);
 </script>
 </body>
 </html>
