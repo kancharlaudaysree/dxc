@@ -1,41 +1,50 @@
-package com;
+package com.one;
 
 public class Cohorts {
+
+	private int cohortid;
+	private String cohortname;
+	private String emailid;
+	private long contactno;
+
 	public Cohorts() {
+		
+	}
+	public Cohorts(int cohortid, String cohortname, String emailid, long contactno) {
 		super();
-		System.out.println("Inside cohort class");
-		// TODO Auto-generated constructor stub
+		this.cohortid = cohortid;
+		this.cohortname = cohortname;
+		this.emailid = emailid;
+		this.contactno = contactno;
 	}
-	private int CohortId;
-	private String CohortName;
-	private String emailId;
-	private long contactNo;
-	
-	public int getCohortId() {
-		return CohortId;
+	public int getCohortid() {
+		return cohortid;
 	}
-	public void setCohortId(int cohortId) {
-		CohortId = cohortId;
+	public void setCohortid(int cohortid) {
+		this.cohortid = cohortid;
 	}
-	public String getCohortName() {
-		return CohortName;
+	public String getCohortname() {
+		return cohortname;
 	}
-	public void setCohortName(String cohortName) {
-		CohortName = cohortName;
+	public void setCohortname(String cohortname) {
+		this.cohortname = cohortname;
 	}
-	public String getEmailId() {
-		return emailId;
+	public String getEmailid() {
+		return emailid;
 	}
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
 	}
-	public long getContactNo() {
-		return contactNo;
+	public long getContactno() {
+		return contactno;
 	}
-	public void setContactNo(long contactNo) {
-		this.contactNo = contactNo;
+	public void setContactno(long contactno) {
+		this.contactno = contactno;
 	}
-
-
-	
+	public void printinfo() {
+		System.out.println("Id:"+cohortid);
+		System.out.println("Name:"+cohortname);
+		System.out.println("email:"+emailid);
+		System.out.println("contactno:"+contactno);
+	}
 }
