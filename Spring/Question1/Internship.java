@@ -1,6 +1,17 @@
-package com;
-import org.springframework.context.ApplicationContext;
+package com.one;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+ 
 public class Internship {
-	ApplicationContext con= new ClassPathXmlApplicationContext("applicationContext.xml");
+ 
+    public static void main(String[] args) {
+   
+ 
+        ConfigurableApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        DXC d = (DXC) ac.getBean("dxc");
+
+        d.printDXC();
+        ac.close();
+       
+}
 }
