@@ -3,10 +3,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBoatwebappdemoApplication {
+public class SpringBootwebappdemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBoatwebappdemoApplication.class, args);
+		SpringApplication.run(SpringBootwebappdemoApplication.class, args);
 	}
 
 }
